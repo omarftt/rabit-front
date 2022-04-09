@@ -1,0 +1,115 @@
+$primary: #083F90;
+$success: #308ADD;
+$secondary: #000034;
+$info: #0D2065;
+$danger: #040D22;
+
+$border-radius-lg: 1rem;
+
+@media (min-width:992px){
+    .button-100 {
+        width: 160px;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px){
+    .button-100 {
+        width: 120px;
+    }
+}
+@media (min-width:768px){
+    .letter-upper {
+        font-size: 0.75em;
+    }
+}
+@media (max-width: 767px) {
+    .letter-upper {
+        font-size: 0.5em
+    }
+}
+footer{
+    background-color: 083F90;
+    color: white;
+}
+.rabit-logo {
+    height: 200px;
+    
+}
+footer p {
+    font-size: 15px;
+}
+.redes{
+    position: relative;
+    width: center;
+    top: 30px;
+    left: 50px;
+    right:  50px;
+}
+#quienes_somos{
+    position: relative;
+    z-index: 1;
+    background-color: 0F1023;
+    height: 250px;
+}
+#quienes_somos .overlay{
+    color: white;
+    z-index: 2;   
+    position:absolute;
+    top: 20px;
+    left: 50px;
+    right:  50px;
+}
+
+#nuestros_estudiantes {
+    position: relative;
+    background-color: B5D7F7;
+    
+}
+
+
+#nuestros_estudiantes img{
+    height: 300px;
+}
+#nuestros_estudiantes .overlay{
+    color: white;
+    z-index: 2;   
+    position:relative;
+    
+}
+.opiniones{
+    z-index: 2;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 10px;
+    border-radius: 10px ;
+    border-color: black;
+}
+footer{
+    background-color: #083f90;
+}
+.rabit-logo {
+    height: 100px;
+     
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+
+    border-right:15px solid #308ADD; 
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    
+    border-left: 15px solid #308ADD;
+}
+
+
+
+@import "~bootstrap/scss/bootstrap";
