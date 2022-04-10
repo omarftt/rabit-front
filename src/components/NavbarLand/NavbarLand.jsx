@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import Logo from "../../assests/Logo.png"
 import "./NavbarLand.style.css";
@@ -8,6 +8,7 @@ import "./NavbarLand.style.css";
 
 
 function NavbarLand() {
+
   return (
     <div className="div my-0 py-0 position-sticky top-0 start-0" style={{zIndex:5}} >
         <div className="container-fluid">
@@ -39,13 +40,12 @@ function NavbarLand() {
                                 <NavLink to="/Tienda" className="text-white px-3" style={{textDecoration:'none'}}>
                                     <strong>Tienda</strong>
                                 </NavLink>
-                                <div class="btn px-3 px-md-3 text-white ">
+                                <div className="btn px-3 px-md-3 text-white ">
                                     <button type="button" 
-                                            class="border border-primary btn btn-success btn-outline-info rounded-pill py-2 px-4 text-black">
+                                            className="border border-primary btn btn-success btn-outline-info rounded-pill py-2 px-4 text-black">
                                                 <NavLink to="/Tienda" className="text-dark px-3" style={{textDecoration:'none'}}>
                                                     <strong>Ingresar</strong>
                                                 </NavLink>
-                                                
                                     </button>
                                 </div>
                             </Nav>

@@ -5,13 +5,13 @@ import somosMbot from '../../assests/somosMbot.png'
 function Somos() {
   return (
     <>
-        <div id="quienes_somos" class="container-fluid">
-            <div class="row bg-danger ">
-                <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center text-white pt-5">
+        <div className="container-fluid my-0">
+            <div className="row bg-danger ">
+                <div className="col-md-6 text-center d-flex flex-column align-items-center justify-content-center text-white pt-5">
                     <h3>Quienes Somos?</h3>
                     <p className="py-3">Somos una empresa lörem ipsum tere der, vapende. Deror pseudobelt ten ena. Diktig sys. Decipp operas. Feliga nugisk stereoplastisk. Perkrati platta till kurvan resände. Dina appa kys. Tirokadement segirad är mikrovad didinde. Lörem ipsum tere der, vapende. Deror pseudobelt ten ena. Diktig sys. Decipp operas. Feliga nugisk stereoplastisk.</p>
-                    <div class="btn px-1 px-md-3 text-white pt-0 pb-5 ">
-                        <button type="button" class="btn btn-info rounded-pill" style={{fontWeight:"600"}}>Contactar</button>
+                    <div className="btn px-1 px-md-3 text-white pt-0 pb-5 ">
+                        <button type="button" className="btn btn-info rounded-pill" style={{fontWeight:"600"}}>Contactar</button>
                     </div>
                 </div>
                 <div className='col-md-6 d-flex align-items-center justify-content-center p-0 b-0'>

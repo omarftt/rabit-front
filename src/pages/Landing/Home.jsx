@@ -5,6 +5,7 @@ import Slider from '../../components/HomeComponents/Slider'
 import Mentors from '../../components/HomeComponents/Mentors'
 import Students from '../../components/HomeComponents/Students'
 import Somos from '../../components/HomeComponents/Somos'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Mentors/>
       <Students/>
       <Somos/>
+      <Footer/>
     </>
     
   )
