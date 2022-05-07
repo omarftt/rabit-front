@@ -3,9 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import ImgTalleres from '../../assests/ImgTalleres.png'
 import Curso1 from '../../assests/curso.jpg'
 import Filter from '../Talleres/Filter'
+import ModalContent from './ModalContent';
 
 
 function ListItem(props) {
+
   
   return (
       <motion.div
@@ -18,9 +20,10 @@ function ListItem(props) {
         <div className="d-flex flex-column row card-body align-items-center justify-content-between">
             <h5 className="card-title my-2">{props.name}</h5>
             <p className="card-text ">{props.description}</p>
-            <a href="/" className="btn btn-primary rounded-3 col-6 align-items-end">Ver Taller</a>
-        </div>         
+            <ModalContent/>
+        </div>
       </motion.div>
+
   )
 }
 
