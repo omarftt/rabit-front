@@ -47,7 +47,7 @@ function CompetitionComp() {
                         <strong>Entrena con nuestros ganadores del <br />MakeX Starter Robotic Competition</strong>
                     </h2>
                     <div className="d-flex justify-content-center col-11 py-3 py-lg-1">
-                        <button type="button" class="btn btn-primary rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
+                        <button type="button" className="btn btn-primary rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
                     </div>
                     <h6 className="row py-3 py-lg-1 pb-lg-4">
                         <div className="d-flex justify-content-center col-6 py-3">
@@ -74,7 +74,7 @@ function CompetitionComp() {
                         <strong>Entrena con nuestros ganadores del la competencia Game Design</strong>
                     </h2>
                     <div className="d-flex justify-content-center col-11 py-3 py-lg-1">
-                        <button type="button" class="btn btn-info rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
+                        <button type="button" className="btn btn-info rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
                     </div>
                     <h6 className="row py-3 py-lg-1 pb-lg-4">
                         <div className="d-flex justify-content-center col-6 py-3">
@@ -106,7 +106,7 @@ function CompetitionComp() {
                         <strong>Entrena con nuestros ganadores del Torneo de Halloween Rabit Tech</strong>
                     </h2>
                     <div className="d-flex justify-content-center col-11 py-3 py-lg-4">
-                        <button type="button" class="btn btn-info rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
+                        <button type="button" className="btn btn-info rounded-pill px-5 border border-primary" style={{fontWeight:"600"}}>Contactanos</button>
                     </div>
                     <h6 className="row py-3 py-lg-1 pb-lg-4">
                         <div className="d-flex justify-content-center col-6 py-3">

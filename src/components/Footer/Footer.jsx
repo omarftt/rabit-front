@@ -7,7 +7,7 @@ function Footer() {
         <footer >
             <div className="row py-1 bg-primary">
                 <div className="col-4 text-center text-end my-3">
-                    <img src={Logo} alt="rabit logo" className="rabit-logo pt-3 h-100"/>
+                    <img src={Logo} alt="rabit logo" className="rabit-logo mb-3 h-100"/>
                 </div>
                 <div className="col-8 d-flex flex-column justify-content-center ">
                     <p className="icon icon-office  px-3"> CAL. 5 MZA. N LOTE. 15 APV. MIGUEL GRAU LIMA / LIMA / SAN MARTIN DE PORRES</p>

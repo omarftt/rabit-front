@@ -43,7 +43,7 @@ function NavbarLand() {
                                 <div className="btn px-3 px-md-3 text-white ">
                                     <button type="button" 
                                             className="border border-primary btn btn-success btn-outline-info rounded-pill py-2 px-4 text-black">
-                                                <NavLink to="/Tienda" className="text-dark px-3" style={{textDecoration:'none'}}>
+                                                <NavLink to="/Login" className="text-dark px-3" style={{textDecoration:'none'}}>
                                                     <strong>Ingresar</strong>
                                                 </NavLink>
                                     </button>
