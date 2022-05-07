@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import studentRabit from '../../assests/studentOpinion.png'
 import iconoStudent from '../../assests/iconoStudent.png'
+import {CaretRightOutlined,CaretLeftOutlined } from '@ant-design/icons'
 
 function Students() {
     const [student,setStudent] = useState(0);
@@ -57,7 +58,7 @@ function Students() {
                     <div className="image_buttons col-1">
                         <div>
                             { (student >0) &&(
-                                <button onClick={()=>setStudent(student-1)} className="btn btn-primary rounded-circle">L</button>
+                                <button onClick={()=>setStudent(student-1)} className="btn btn-primary rounded-circle align-items-center "><CaretLeftOutlined  className='pb-1'/></button>
                             )}
                         </div>
                     </div>
@@ -69,7 +70,7 @@ function Students() {
                     <div className="image_buttons col-1">
                         <div>
                             { (student < (studentsSaved.length-1)) &&(
-                                <button onClick={()=>setStudent(student+1)} className="btn btn-primary rounded-circle">R</button>
+                                <button onClick={()=>setStudent(student+1)} className="btn btn-primary rounded-circle"><CaretRightOutlined  className='pb-1'/></button>
                             )}
                         </div>
                     </div>
