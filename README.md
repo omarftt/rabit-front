@@ -24,7 +24,7 @@ The PORTS used for demo are:
 
 To run the project execute the next line:
 ```
-npm run dev: run in development environment
+npm start
 ```
 
 
