@@ -1,6 +1,8 @@
 import React from 'react'
-import imgCard1 from '../../assests/curso.jpg'
-import Arrow from '../../assests/Arrow.png'
+import imgCard1 from '../../assets/curso.jpg'
+import ImgCardHome1 from '../../assets/ImgCardHome1.jpg'
+import ImgCardHome2 from '../../assets/ImgCardHome2.jpg'
+import Arrow from '../../assets/Arrow.png'
 import { Link } from 'react-router-dom'
 
 function MainCards() {
@@ -28,10 +30,10 @@ function MainCards() {
                     </div>
                     <div className="col-6 col-md-3 my-3  mx-3 mx-lg-0">
                         <div className="card border border-3 rounded-3 border-dark col-12 col-xl-11 p-0" >
-                            <img src={imgCard1} className="card-img-top rounded-bottom rounded-3" alt="..."/>
+                            <img src={ImgCardHome1} className="card-img-top rounded-bottom rounded-3" alt="..."/>
                             <div className="d-flex flex-column row card-body align-items-center justify-content-center">
                                 <h5 className="card-title my-3"><strong>COMPETICIONES</strong></h5>
-                                <p className="card-text">Conoce mas acerca de nuestros cursos de robotica, diseño de videojuegos, programacion, matematicas y otros.</p>
+                                <p className="card-text">Encuentra las proximas competencias mas retadoras del año y conoce los detalles de cada una .</p>
                                 <div className="d-flex justify-content-end my-1 ">
                                     <Link to="/Competiciones" className="text-white px-3" style={{textDecoration:'none'}}>
                                         <button className="border border-0 bg-white"><img src={Arrow} alt="arrow" /></button>
@@ -42,10 +44,10 @@ function MainCards() {
                     </div>
                     <div className="col-6 col-md-3 my-3  mx-3 mx-lg-0">
                         <div className="card border border-3 rounded-3 border-dark col-12 col-xl-11 p-0" >
-                            <img src={imgCard1} className="card-img-top rounded-bottom rounded-3" alt="..."/>
+                            <img src={ImgCardHome2} className="card-img-top rounded-bottom rounded-3" alt="..."/>
                             <div className="d-flex flex-column row card-body align-items-center justify-content-center">
                                 <h5 className="card-title my-3"><strong>TIENDA</strong></h5>
-                                <p className="card-text">Conoce mas acerca de nuestros cursos de robotica, diseño de videojuegos, programacion, matematicas y otros.</p>
+                                <p className="card-text">Encuentra los productos mas solicitados que usaras para aprender en tus talleres, a un precio barato </p>
                                 <div className="d-flex justify-content-end my-1 ">
                                     <Link to="/Tienda" className="text-white px-3" style={{textDecoration:'none'}}>
                                         <button className="border border-0 bg-white"><img src={Arrow} alt="arrow" /></button>

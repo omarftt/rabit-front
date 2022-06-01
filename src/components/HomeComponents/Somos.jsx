@@ -1,5 +1,5 @@
 import React from 'react'
-import somosMbot from '../../assests/somosMbot.png'
+import somosMbot from '../../assets/somosMbot.png'
 
 
 function Somos() {
@@ -9,7 +9,7 @@ function Somos() {
             <div className="row bg-danger ">
                 <div className="col-md-6 text-center d-flex flex-column align-items-center justify-content-center text-white pt-5">
                     <h3>Quienes Somos?</h3>
-                    <p className="py-3">Somos una empresa lörem ipsum tere der, vapende. Deror pseudobelt ten ena. Diktig sys. Decipp operas. Feliga nugisk stereoplastisk. Perkrati platta till kurvan resände. Dina appa kys. Tirokadement segirad är mikrovad didinde. Lörem ipsum tere der, vapende. Deror pseudobelt ten ena. Diktig sys. Decipp operas. Feliga nugisk stereoplastisk.</p>
+                    <p className="py-3">Somos una organización que ofrece una propuesta educativa innovadora y tecnológica, dirigida a niños y adolescente, promoviendo el desarrollo óptimo de sus inteligencias múltiples, competencias y habilidades del siglo 21, a través de talleres y proyectos tecnológicos.</p>
                     <div className="btn px-1 px-md-3 text-white pt-0 pb-5 ">
                         <button type="button" className="btn btn-info rounded-pill" style={{fontWeight:"600"}}>Contactar</button>
                     </div>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import ImgTalleres from '../../assests/ImgTalleres.png'
-import Curso1 from '../../assests/curso.jpg'
+import ImgTalleres from '../../assets/ImgTalleres.png'
+import Curso1 from '../../assets/curso.jpg'
 import Filter from '../Talleres/Filter'
 import ModalContent from './ModalContent';
 
@@ -38,32 +38,32 @@ function TalleresComp() {
             id: 10001,
             name: 'Robotica con mTiny',
             edadCode: [1] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Aprende y diviertete programando con mTiny, un robot especialmente diseñado para niños',
           }, {
             id: 10002,
             name: 'Programación de videojuegos',
             edadCode: [2] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Libera todo tu potencial y aprende a programar y diseñar tu propio videojuego 2D.',
           },{
             id: 10003,
             name: 'Robotica Kids con mBot',
             edadCode: [2] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Impulsa a tus hijos a aprender y explorar conceptos y aplicaciones de la robótica de manera fácil y divertida con el robot de aprendizaje mBot.',
           },{
             id: 10004,
             name: 'Robotica con mBot',
             edadCode: [3] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Aprende sobre robotica basica para jovenes donde aplicaras programacion de luces, sonido, movimientos y los mejores algoritmos de competiciones.',
           },{
             id: 10005,
             name: 'Mat Vit',
             edadCode: [3] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Aprende con los problemas de matematicas especialmente diseñados para retarte.',
           },{
             id: 10006,
             name: 'Maker Kids con Halocode',
             edadCode: [3] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+            description: 'Aprende y diviertete con el robot bipedo Halobot, donde descubriras todo el potencial del halocode.',
           },{
             id: 10007,
             name: 'Maker Kids con Arduino',
@@ -82,11 +82,6 @@ function TalleresComp() {
           },{
             id: 10010,
             name: 'Maker Teens con Halocode',
-            edadCode: [4] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-          },{
-            id: 10011,
-            name: 'Maker Teens con Arduino',
             edadCode: [4] ,
             description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
           }
@@ -117,13 +112,11 @@ function TalleresComp() {
                         <strong>Aprende de nuestros talleres</strong>
                     </h1>
                     <h6 className="pt-1 pb-5">
-                        Lörem ipsum väggord tetrarad men dont. Juvis lusk doplagisk. Era suprakrati trer. 
-                        Antida suprahära linde monopp i ösent. Lörem ipsum väggord tetrarad men dont. Juvis lusk doplagisk. Era suprakrati trer. 
-                        Antida suprahära linde monopp i ösent.
+                    En RABIT TECH, tenemos como objetivo promover la excelencia academia a través de nuestros 
+                    colaboradores y brindar al estudiante una educación integral y de calidad para fortalecer 
+                    las competencias que rigen este nuevo siglo.
+
                     </h6>
-                    <div className="d-flex justify-content-center col-11">
-                        <button type="button" className="btn btn-success btn-outline-info rounded-pill px-5 border border-success " style={{fontWeight:"600"}}>Ingresar</button>
-                    </div>
                     
                 </div>
                 <div className="d-flex justify-content-center align-items-center col-12 col-sm-6 ">
@@ -137,10 +130,11 @@ function TalleresComp() {
             
             <div className="d-flex justify-content-center align-items-center flex-row">
                 <hr className="bg-primary border-3 border-top border-primary position-relative top-50 " width="25%" />
-                <div className="col-9 bg-primary my-5 py-5 rounded-3 border border-primary text-white">
-                    
-                    <p className="px-4">Lörem ipsum väggord tetrarad men dont. Juvis lusk doplagisk. Era suprakrati trer. 
-                        Antida suprahära linde monopp i ösent. </p>
+                <div className="col-9 bg-primary my-5 py-5 rounded-3 border border-primary text-white d-flex flex-column align-items-center">
+                    <h4 className='mb-5'>NUESTRA METODOLOGÍA</h4>
+                    <p className="px-4" style={{textAlign:"justify"}}>La finalidad de nuestra metodología es comprender y promover el aprendizaje, el pensamiento y la creatividad en las distintas disciplinas, instituciones y personas. Además, se desarrolla el pensamiento crítico, que pueda plantear, resolver problemas superando dificultades y detectar puntos de mejora. 
+                      El modelo EpC es un referente útil para innovar en las prácticas por su énfasis en el desarrollo de competencias y la evaluación por desempeños.
+                    </p>
                         
                 </div>
                 <hr className="bg-primary border-3 border-top border-primary position-relative top-50 " width="25%" />

@@ -5,7 +5,7 @@ import { AccountContext } from "./AccountContext";
 import styled from 'styled-components'
 import LoginForm from './LoginForm'
 import SignUpForm from './SignUpForm'
-import Logo from "../../assests/Logo.png"
+import Logo from "../../assets/Logo.png"
 import './AccountBox.css'
 
 

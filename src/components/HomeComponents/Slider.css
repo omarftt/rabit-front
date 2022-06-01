@@ -1,0 +1,17 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima-left{
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    width: 36%;
+}
+.texto-encima-right{
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    width: 36%;
+}

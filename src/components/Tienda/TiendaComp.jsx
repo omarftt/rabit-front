@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
-import imgTienda from '../../assests/TiendaRabit.png'
-import imgProducto from '../../assests/productN1.jpg'
+import imgTienda from '../../assets/TiendaRabit.png'
+import imgProducto from '../../assets/productN1.jpg'
 import CheckBox from './CheckBox'
 import { motion, AnimatePresence } from "framer-motion";
 

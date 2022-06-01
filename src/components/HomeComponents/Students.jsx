@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
-import studentRabit from '../../assests/studentOpinion.png'
-import iconoStudent from '../../assests/iconoStudent.png'
+import studentRabit from '../../assets/studentOpinion.png'
+import iconoStudent from '../../assets/iconoStudent.png'
 import {CaretRightOutlined,CaretLeftOutlined } from '@ant-design/icons'
 
 function Students() {
@@ -11,24 +11,24 @@ function Students() {
     const createStudents = () => {
         const studentsToPut = [{
                 id: 20001,
-                name: 'Estudiante 1',
+                name: 'Juan Sebastian',
                 imagen: iconoStudent,
-                description: 'Palabras del estudiante 1 . Palabras del estudiante 1 .Palabras del estudiante 1 Palabras del estudiante 1 .',
+                description: 'El taller de robotica me ayudo a comprender los pasos fundamentales para crear mi robot y participar en competencias .',
             }, {
                 id: 20002,
-                name: 'Estudiante 2',
+                name: 'Anderson Martinez',
                 imagen: iconoStudent,
-                description: 'Palabras dedl estudiante 2 . Palabras del estudiante 2 .Palabras del estudiante 2 Palabras del estudiante 2 .',
+                description: 'Ser parte del taller de videojuegos me ayudo a entender la programacion de forma divertida.',
             },{
                 id: 20003,
-                name: 'Estudiante 3',
+                name: 'Ricardo Lopez',
                 imagen: iconoStudent,
-                description: 'Palabras del estudiante 3 . Palabras del estudiante 3 .Palabras del estudiante 3 Palabras del estudiante 3',
+                description: 'El taller de Arduino me ayudo a entender el funcionamiento de los microcontroladores y a crear una aplicacion totalmente funcional.',
             },{
                 id: 20004,
-                name: 'Estudiante 4',
+                name: 'Juan Suarez',
                 imagen: iconoStudent,
-                description: 'Palaabras del estudiante 4 . Palabras del estudiante 4 .Palabras del estudiante 4 Palabras del estudiante 4',
+                description: 'Las clases de robotica avanzada me ayudo a entender los mejores algoritmos de programacion de robots.',
             }
           ]
   

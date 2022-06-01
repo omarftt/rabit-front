@@ -1,0 +1,95 @@
+.newElement {
+    flex: 2;
+    display: flex;
+}
+
+.formNew{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    justify-content: space-around;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.85);
+    border-radius: 10px;
+    border-color: rgb(32, 32, 32);
+}
+
+.formInput {
+    width: 40%;
+}
+.formInputProfile {
+    width: 85%;
+}
+
+.formInputDescription {
+    width: 90%;
+}
+
+
+.labelNew {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputNew {
+    width:100% ;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.buttonNew {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.imgContainer {
+
+    display: flex;
+    flex: 1;
+    width: 25%;
+}
+
+.imgNew {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottomProfile {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+}
+
+.leftProfile {
+    flex:1;
+    text-align: center;
+
+}
+
+.rightProfile {
+    flex:2;
+    text-align: center;
+}
+
+.imgProfile {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-top: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import Logo from "../../assests/Logo.png"
+import Logo from "../../assets/Logo.png"
 import "./NavbarLand.style.css";
 
 

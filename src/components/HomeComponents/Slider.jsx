@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import { Carousel  } from 'react-bootstrap'
-import Slider1 from '../../assests/imgSpark.png'
+import SliderImg1 from '../../assets/SliderImg1.jpg'
+import SliderImg2 from '../../assets/SliderImg2.jpg'
+import SliderImg3 from '../../assets/SliderImg3.jpg'
+import './Slider.css'
 
 function Slider() {
     const [index, setIndex] = useState(0);
@@ -11,40 +14,38 @@ function Slider() {
 
     return (
         <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
+
+            <Carousel.Item className='contenedor'>
+                <h1 className='texto-encima-left text-white'>Aprende de las mejores clases de programacion, robotica y videojuegos</h1>
                 <img
                 className="d-block w-100"
-                src={Slider1}
+                src={SliderImg1}
                 alt="First slide"
                 height="600"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
+                <h1 className='texto-encima-right text-white'>Unete a la familia de los campeones en competencias de robotica</h1>
                 <img
                 className="d-block w-100"
-                src={Slider1}
+                src={SliderImg2}
                 alt="First slide"
                 height="600"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
+                <h1 className='texto-encima-left text-black'>Encuentra los componentes necesarios para empezar en el mundo de la robotica</h1>
                 <img
                 className="d-block w-100"
-                src={Slider1}
+                src={SliderImg3}
                 alt="First slide"
                 height="600"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
