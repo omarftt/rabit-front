@@ -48,13 +48,13 @@ function Students() {
     <>
         <div className="nuestros_estudiantes container-fluid my-5">
             <div className="row  align-items-center text-center ">
-                <h3>¿Que opinan nuestro Estudiantes?</h3>
+                <h3 className='my-5 pb-3'>¿Que opinan nuestro Estudiantes?</h3>
             </div>  
-            <div className="row align-items-center text-center" >
-                <div className="col-lg-5 my-5">
+            <div className="row align-items-center text-center mt-1 mb-5 pb-2" >
+                <div className="col-lg-4 my-5">
                     <img style={{height: "40vh"}} src={studentRabit} alt="rabit Student"/>
                 </div>
-                <div className="col-lg-6 row d-flex align-items-center justify-content-center ">
+                <div className="col-lg-7 row d-flex align-items-center justify-content-center ">
                     <div className="image_buttons col-1">
                         <div>
                             { (student >0) &&(

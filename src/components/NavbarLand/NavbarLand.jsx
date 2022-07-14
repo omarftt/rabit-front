@@ -20,7 +20,7 @@ function NavbarLand() {
                         <div className="ms-auto px-3 letter-upper" >R</div>
                     </div>
                 </div>
-                <Navbar collapseOnSelect expand="lg" bg="primary" className="my-0">
+                <Navbar collapseOnSelect expand="lg" bg="info" className="my-0 nav-shadow ">
                     <Container fluid>
                         <Navbar.Brand href="/"><img className=" me-auto mx-3" src={Logo}  alt="Logo" width="60" height="63" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -42,7 +42,7 @@ function NavbarLand() {
                                 </NavLink>
                                 <div className="btn px-3 px-md-3 text-white ">
                                     <button type="button" 
-                                            className="border border-primary btn btn-success btn-outline-info rounded-pill py-2 px-4 text-black">
+                                            className="border border-primary btn btn-success btn-outline-primary rounded-pill py-2 px-4 text-black">
                                                 <NavLink to="/Login" className="text-dark px-3" style={{textDecoration:'none'}}>
                                                     <strong>Ingresar</strong>
                                                 </NavLink>

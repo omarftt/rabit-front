@@ -1,0 +1,44 @@
+
+  .filtro{
+      height: 800px;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .filtro {
+        height: 900px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .filtro {
+        height: 700px;
+    }
+  }
+
+.letraTienda {
+    font-family: Comfortaa;
+}
+
+
+.cardTienda {
+    background: #fff;
+    width: 18em;
+    height: 26em;
+    border-radius: 0.6em;
+    margin: 1em;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 10px -10px rgba(50, 50, 93, 0.555), 0 10px 16px -10px hsla(0, 0%, 0%, 0.404), 0 -10px 16px -10px hsla(0, 0%, 0%, 0.03);
+    transition: all ease 200ms;
+  }
+  
+.cardTienda:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px -3px rgba(50, 50, 93, 0.315), 0 6px 20px -6px hsla(0, 0%, 0%, 0.2), 0 -6px 20px -6px hsla(0, 0%, 0%, 0.2);
+  }
+  
+.cardTienda img {
+    width: 100%;
+    object-fit: cover;
+  }

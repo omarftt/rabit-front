@@ -9,7 +9,7 @@ function MainCards() {
 
     return (
         <>
-            <div className="bienvenidos container-fluid my-4" >
+            <div className="bienvenidos container-fluid my-4 py-4" >
                 <div className="row justify-content-center align-items-center text-center " style={{height: "100px"}}>
                     <h3><strong>Bienvenidos a RABIT TECH</strong></h3>
                 </div>  

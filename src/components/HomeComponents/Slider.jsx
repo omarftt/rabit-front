@@ -16,7 +16,7 @@ function Slider() {
         <Carousel activeIndex={index} onSelect={handleSelect}>
 
             <Carousel.Item className='contenedor'>
-                <h1 className='texto-encima-left text-white'>Aprende de las mejores clases de programacion, robotica y videojuegos</h1>
+                <h1 className='texto-encima-left text-white' style={{fontSize:'2.5vw'}} >Aprende de las mejores clases de programacion, robotica y videojuegos</h1>
                 <img
                 className="d-block w-100"
                 src={SliderImg1}
@@ -27,7 +27,7 @@ function Slider() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <h1 className='texto-encima-right text-white'>Unete a la familia de los campeones en competencias de robotica</h1>
+                <h1 className='texto-encima-right text-white' style={{fontSize:'2.5vw'}}>Unete a la familia de los campeones en competencias de robotica</h1>
                 <img
                 className="d-block w-100"
                 src={SliderImg2}
@@ -38,7 +38,7 @@ function Slider() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <h1 className='texto-encima-left text-black'>Encuentra los componentes necesarios para empezar en el mundo de la robotica</h1>
+                <h1 className='texto-encima-left text-black' style={{fontSize:'2.5vw'}}>Encuentra los componentes necesarios para empezar en el mundo de la robotica</h1>
                 <img
                 className="d-block w-100"
                 src={SliderImg3}

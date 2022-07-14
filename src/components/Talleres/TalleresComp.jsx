@@ -2,8 +2,12 @@ import React, {useEffect, useState} from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import ImgTalleres from '../../assets/ImgTalleres.png'
 import Curso1 from '../../assets/curso.jpg'
+import iconoTalleres1 from '../../assets/iconoTalleres1.png'
+import iconoTalleres2 from '../../assets/iconoTalleres2.png'
+import iconoTalleres3 from '../../assets/iconoTalleres3.png'
 import Filter from '../Talleres/Filter'
 import ModalContent from './ModalContent';
+import { listaTalleresOri } from './listTalleres';
 
 
 function ListItem(props) {
@@ -16,11 +20,23 @@ function ListItem(props) {
       exist={{opacity:0}}
       layout 
       className="card  border border-3 rounded-3 border-success col-12 col-sm-8 col-md-5 col-lg-3 m-3 p-0" style={{width: "18rem"}}>
-        <img src={Curso1} className="card-img-top rounded-bottom rounded-3" alt="..." />
-        <div className="d-flex flex-column row card-body align-items-center justify-content-between">
+        <img src={props.imgPath} className="card-img-top rounded-bottom rounded-3" alt="..." />
+        <div className="d-flex flex-column row card-body align-items-center justify-content-between" >
             <h5 className="card-title my-2">{props.name}</h5>
             <p className="card-text ">{props.description}</p>
-            <ModalContent/>
+            <ModalContent 
+              name = {props.name}
+              description = {props.description}
+              numeroNiveles = {props.numeroNiveles}
+              hoursPerLevel = {props.hoursPerLevel}
+              startDate = {props.startDate}
+              ageRange = {props.ageRange}
+              investmentFirst = {props.investmentFirst}
+              investmentTotal = {props.investmentTotal}
+              materials = {props.materials}
+              colorStyle = {props.colorStyle}
+              imgPath = {props.imgPath}
+              />
         </div>
       </motion.div>
 
@@ -34,58 +50,7 @@ function TalleresComp() {
 
     
   const createTalleres = () => {
-      const talleres = [{
-            id: 10001,
-            name: 'Robotica con mTiny',
-            edadCode: [1] ,
-            description: 'Aprende y diviertete programando con mTiny, un robot especialmente diseñado para niños',
-          }, {
-            id: 10002,
-            name: 'Programación de videojuegos',
-            edadCode: [2] ,
-            description: 'Libera todo tu potencial y aprende a programar y diseñar tu propio videojuego 2D.',
-          },{
-            id: 10003,
-            name: 'Robotica Kids con mBot',
-            edadCode: [2] ,
-            description: 'Impulsa a tus hijos a aprender y explorar conceptos y aplicaciones de la robótica de manera fácil y divertida con el robot de aprendizaje mBot.',
-          },{
-            id: 10004,
-            name: 'Robotica con mBot',
-            edadCode: [3] ,
-            description: 'Aprende sobre robotica basica para jovenes donde aplicaras programacion de luces, sonido, movimientos y los mejores algoritmos de competiciones.',
-          },{
-            id: 10005,
-            name: 'Mat Vit',
-            edadCode: [3] ,
-            description: 'Aprende con los problemas de matematicas especialmente diseñados para retarte.',
-          },{
-            id: 10006,
-            name: 'Maker Kids con Halocode',
-            edadCode: [3] ,
-            description: 'Aprende y diviertete con el robot bipedo Halobot, donde descubriras todo el potencial del halocode.',
-          },{
-            id: 10007,
-            name: 'Maker Kids con Arduino',
-            edadCode: [3] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-          },{
-            id: 10008,
-            name: 'Child Comunication',
-            edadCode: [3] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-          },{
-            id: 10009,
-            name: 'Robotica Teens con Arduino',
-            edadCode: [4] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-          },{
-            id: 10010,
-            name: 'Maker Teens con Halocode',
-            edadCode: [4] ,
-            description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-          }
-        ]
+      const talleres = listaTalleresOri
 
       setTalleres(talleres)
       setFiltered(talleres)
@@ -97,7 +62,19 @@ function TalleresComp() {
   },[]);
 
   const listTalleres = filtered.map((taller) =>
-    <ListItem key={taller.id} name={taller.name} description={taller.description}/>
+    <ListItem key={taller.id}
+              name={taller.name} 
+              description={taller.description}
+              numeroNiveles = {taller.numeroNiveles}
+              hoursPerLevel = {taller.hoursPerLevel}
+              startDate = {taller.startDate}
+              ageRange = {taller.ageRange}
+              investmentFirst = {taller.investmentFirst}
+              investmentTotal = {taller.investmentTotal}
+              materials = {taller.materials}
+              colorStyle = {taller.colorStyle}
+              imgPath = {taller.imgPath}/>
+
   );
 
   
@@ -107,11 +84,11 @@ function TalleresComp() {
         
         <div className="container-fluid intro">
             <div className="row mt-2">
-                <div className="d-flex flex-column justify-content-center col-12 col-sm-6 px-5 ">
-                    <h1 className="py-2 my-4">
+                <div className="d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 px-5 ">
+                    <h1 className="py-2 my-4 ">
                         <strong>Aprende de nuestros talleres</strong>
                     </h1>
-                    <h6 className="pt-1 pb-5">
+                    <h6 className="pt-4 pb-5 w-75" style={{textAlign:"justify"}}>
                     En RABIT TECH, tenemos como objetivo promover la excelencia academia a través de nuestros 
                     colaboradores y brindar al estudiante una educación integral y de calidad para fortalecer 
                     las competencias que rigen este nuevo siglo.
@@ -130,11 +107,28 @@ function TalleresComp() {
             
             <div className="d-flex justify-content-center align-items-center flex-row">
                 <hr className="bg-primary border-3 border-top border-primary position-relative top-50 " width="25%" />
-                <div className="col-9 bg-primary my-5 py-5 rounded-3 border border-primary text-white d-flex flex-column align-items-center">
-                    <h4 className='mb-5'>NUESTRA METODOLOGÍA</h4>
-                    <p className="px-4" style={{textAlign:"justify"}}>La finalidad de nuestra metodología es comprender y promover el aprendizaje, el pensamiento y la creatividad en las distintas disciplinas, instituciones y personas. Además, se desarrolla el pensamiento crítico, que pueda plantear, resolver problemas superando dificultades y detectar puntos de mejora. 
-                      El modelo EpC es un referente útil para innovar en las prácticas por su énfasis en el desarrollo de competencias y la evaluación por desempeños.
-                    </p>
+                <div className="col-9 bg-primary my-5 py-4 px-4 rounded-3 border border-secondary border-2 text-white d-flex flex-column align-items-center">
+                    
+                    <h4 className='mb-5'><strong>Nuestra Metodología</strong></h4>
+                    <div className='d-flex row justify-content-around'>
+                      <div className='d-flex flex-column align-items-center col-12 col-md-5 col-lg-3 mx-2 px-2'>
+                        <img src={iconoTalleres1} alt="IconTaller1" style={{maxHeight:'96px' , maxWidth:'96px'}}/>
+                        <p><strong>Clases virtuales</strong></p>
+                        <p style={{fontSize:'0.8rem', textAlign:"justify"}}>Talleres con espacios virtuales propios para aprender desde cualquier lugar.</p>
+                      </div>
+                      <div className='d-flex flex-column align-items-center col-12 col-md-5 col-lg-3 mx-2 px-2'>
+                        <img src={iconoTalleres2} alt="IconTaller2" style={{maxHeight:'96px' , maxWidth:'96px'}}/>
+                        <p><strong>Metodologia de EpC</strong></p>
+                        <p style={{fontSize:'0.8rem', textAlign:"justify"}}>Desarrolla el pensamiento crítico para plantear y resolver problemas.</p>
+                      </div>
+                      <div className='d-flex flex-column align-items-center col-12 col-md-5 col-lg-3 mx-2 px-2'>
+                        <img src={iconoTalleres3} alt="IconTaller3" style={{maxHeight:'96px' , maxWidth:'96px'}}/>
+                        <p><strong>Grupos de pequeños</strong></p>
+                        <p style={{fontSize:'0.8rem', textAlign:"justify"}}>Salones de clase con reducido numero de estudiantes, para una enseñanza personalizada</p>
+                        
+                      </div>
+
+                    </div>
                         
                 </div>
                 <hr className="bg-primary border-3 border-top border-primary position-relative top-50 " width="25%" />

@@ -22,26 +22,22 @@ const sections = [
     },
     {
         "_id": 5,
-        "name": "Estructuras mecanicas",
-    },
-    {
-        "_id": 6,
         "name": "Piezas mecanicas",
     },
     {
-        "_id": 7,
+        "_id": 6,
         "name": "5-7 años",
     },
     {
-        "_id": 8,
+        "_id": 7,
         "name": "8-9 años",
     },
     {
-        "_id": 9,
+        "_id": 8,
         "name": "10-12 años",
     },
     {
-        "_id": 10,
+        "_id": 9,
         "name": "13-17 años",
     }
 ]
@@ -66,7 +62,7 @@ function CheckBox(props) {
     const renderCheckboxList = () => sections.map((section,index) => (
         <React.Fragment key={index}>
             <h6 className='my-3'>{index=== 0 ? "Por tipo de producto": <></>} </h6>
-            <h6 className='my-3'>{index=== 6 ? "Por edades" : <></>} </h6>
+            <h6 className='my-3'>{index=== 5 ? "Por edades" : <></>} </h6>
             <Checkbox 
                 onChange = {() => handleToggle(section._id)} 
                 type="checkbox"

@@ -1,8 +1,10 @@
 import React,{useEffect, useState} from 'react'
 import imgTienda from '../../assets/TiendaRabit.png'
-import imgProducto from '../../assets/productN1.jpg'
 import CheckBox from './CheckBox'
 import { motion, AnimatePresence } from "framer-motion";
+import ModalTienda from './ModalTienda';
+import './TiendaComp.css'
+import { listaProductsOri } from './listProductos';
 
 
 function ListItemTienda(props) {
@@ -13,16 +15,22 @@ function ListItemTienda(props) {
         initial={{opacity:0}} 
         exist={{opacity:0}}
         layout 
-        className="card border border-1 rounded-1 border-dark col-12 col-sm-8 col-md-5 col-lg-3 mx-2 my-3 p-0 " style={{width: "18rem"}}>
+        className="cardTienda border border-0 rounded-3 border-dark col-10 col-sm-8 col-md-5 col-lg-3 mx-3 my-4 p-0 ">
 
-                <img src={imgProducto} alt="producto1" className="bd-placeholder-img "  height="250"/>
-                <div className="card-body">
-                    <p className="card-text">{props.name}</p>
-                    <div className="d-flex justify-content-between align-items-center">
-                        <div className="btn-group">
-                            <a href="index.html"><button type="button" className="btn btn-sm btn-outline-secondary">mas información</button></a>
+                <img src={props.imgfront} alt="producto1" className="bd-placeholder-img "  height="250"/>
+                <div className="card-body d-flex flex-column justify-content-between">
+                    <p className="card-text" style={{height:"40px"}} ><strong>{props.name}</strong></p>
+                    <div className="d-flex justify-content-between align-items-center py-1 ">
+                        <div className="btn-group col-4 mx-2">
+                          <ModalTienda imgmodal={props.imgmodal}/>
                         </div>
-                        <small className="text-primary">S/.199.00</small>
+                        <div className='col-6 d-flex flex-column align-items-start justify-content-around mx-4 px-2'>
+                          <div className="letraTienda my-1 " style={{fontSize:'12px'}}>Costo:</div>
+                          <div className='d-flex'>
+                              <div class="letraTienda" style={{fontSize:'24px'}}><strong>S/. {props.precio}</strong></div>
+                          </div>
+                        </div>
+                        
                     </div>
                 </div>
         </motion.div>
@@ -36,63 +44,7 @@ function TiendaComp() {
     const [filtered,setFiltered] = useState([]);
 
     const createProducts = () => {
-        const productos = [{
-              id: 50001,
-              name: 'mBot Basico',
-              productCode: [2,3,8,9,10] ,
-              description: 'Paquete de componentes de robotica basico mBot para niños ',
-            }, {
-              id: 50002,
-              name: 'mBot 2.0',
-              productCode: [2,3,9,10] ,
-              description: 'Paquete de componentes de robotica avanzado mBot para jovenes',
-            },{
-              id: 50003,
-              name: 'Sensor ultrasonico I',
-              productCode: [1,4,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50004,
-              name: 'Sensor ultrasonico II',
-              productCode: [4,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50005,
-              name: 'Chasis de mBot',
-              productCode: [5,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50006,
-              name: 'Tornillos',
-              productCode: [6,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50007,
-              name: 'mTiny',
-              productCode: [3,7] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50008,
-              name: 'Sensor infrarrojo',
-              productCode: [4,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50009,
-              name: 'Piezas para mBot',
-              productCode: [6,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 50010,
-              name: 'Bateria de Litio',
-              productCode: [1,4,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            },{
-              id: 10011,
-              name: 'Pilas recargables',
-              productCode: [4,8,9,10] ,
-              description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-            }
-          ]
+        const productos = listaProductsOri
   
         setProducts(productos)
         setFiltered(productos)
@@ -127,44 +79,46 @@ function TiendaComp() {
     }
     
     const listProducts = filtered.map((product) => 
-        <ListItemTienda key={product.id} name={product.name}/>
+        <ListItemTienda 
+          key={product.id} 
+          name={product.name}
+          precio={product.precio} 
+          imgfront={product.imgfront}
+          imgmodal={product.imgmodal}/>
         
     )
 
   return (
-    <>
+    <>  
         <section className="container">
-            <div className="row py-lg-5">
-                <div className="col-lg-7 d-flex align-items-center justify-content-center">
-                <h2>Compra Productos a precio distribuidor</h2>
-                </div>
-                <div className="col-lg-5 text-center">
-                <img src={imgTienda} alt="imagen_tienda" style={{maxHeight:"40vh" , maxWidth: "40vh"}} />
-                </div>
+            <div className="row py-5 text-center">
+                  <h2><strong>Compra productos a precio de distribuidor</strong></h2>
             </div>
         </section>
-        <div className="container"> 
-            <div className="row">
-            <div className="col-md-3 d-flex justify-content-center ">
-                <div className="filtro bg-gray rounded-3 py-3 px-4 ">
+        <div className="container-fluid "> 
+            <div className="row bg-white ">
+              <div className=" filtro col-md-3 d-flex justify-content-center text-white ">
+                  <div className=" bg-warning border border-2 border-secondary rounded-3 py-3 px-4 ">
+                    <div className="text-center">
+                      <img src={imgTienda} alt="imagen_tienda" style={{maxHeight:"20vh" , maxWidth: "20vh"}} />
+                    </div>
                     <h3 className="text-left my-3">Filtros</h3>
                     <CheckBox
                         handleFilters={filters => handleFilters(filters)}
                     />
-                </div>
-            </div>
-            <div className=" col-md-9 mt-4">
-                <div className="album bg-light">
-                <div className="container">
-                    <div className="row d-flex justify-content-center row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-3">
-                    <AnimatePresence>
-                        {listProducts}
-                    </AnimatePresence>
-                        
+                  </div>
+              </div>
+              <div className=" col-md-9 mt-2">
+                  <div className=" bg-white mb-5 border border-1 border-warning rounded-3">
+                    <div className="container px-0 my-4">
+                        <div className="row d-flex justify-content-center g-3">
+                          <AnimatePresence>
+                              {listProducts}
+                          </AnimatePresence>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div> 
+                  </div>
+              </div> 
             </div>
         </div>
     </>
