@@ -53,7 +53,7 @@ export const listaTalleresOri  = [{
     imgPath : TallerRoboticaKids
   },{
     id: 10004,
-    name: 'Robotica con mBot',
+    name: 'Robotica Teens con mBot',
     edadCode: [3] ,
     description: 'Aprende sobre robotica basica para jovenes donde aplicaras programacion de luces, sonido, movimientos y los mejores algoritmos de competiciones.',
     numeroNiveles: 8,
@@ -109,7 +109,7 @@ export const listaTalleresOri  = [{
     imgPath : TallerArduinoKids
   },{
     id: 10008,
-    name: 'Child Comunication',
+    name: 'Robotica con Mbot NEO',
     edadCode: [3] ,
     description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
     numeroNiveles: 8,

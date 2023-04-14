@@ -44,7 +44,7 @@ function TimeLine() {
                     </li>
                     <li>
                         <div className="content">
-                            <h3 className='text-white text-center'>Concurso de halloween RABIT</h3>
+                            <h3 className='text-white text-center'>Olimpiada Internacional de Robotica Maker</h3>
                             <p style={{textAlign:"justify"}}>Este evento abarca cierto temas de  
                                 electrónica , mecanica y habilidades blandas.
                                 Este evento abarca cierto temas de  

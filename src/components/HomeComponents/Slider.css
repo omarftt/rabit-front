@@ -15,3 +15,35 @@
     right: 30px;
     width: 36%;
 }
+
+.container-slider {
+    width: 100%;
+    height: 450px;
+}
+
+.image-container-slider1 {
+    position:relative;
+    margin:0 auto;
+    background:url(https://res.cloudinary.com/unicloud010/image/upload/v1666327873/SliderImg1_r9vcqt.jpg) no-repeat center center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+
+.image-container-slider2 {
+    position:relative;
+    margin:0 auto;
+    background:url(https://res.cloudinary.com/unicloud010/image/upload/v1666328074/SliderImg2_gf010h.jpg) no-repeat center center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+
+.image-container-slider3 {
+    position:relative;
+    margin:0 auto;
+    background:url(https://res.cloudinary.com/unicloud010/image/upload/v1666328065/SliderImg3_rkwgj2.png) no-repeat center center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
